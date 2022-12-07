@@ -1,0 +1,40 @@
+.line1::after,
+.line2::after,
+.line3::after {
+    content : '';
+    border: 4px solid #000000;
+    border-radius: 100%;
+    position: absolute;
+    top: -3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.line1::after {
+    left: 15%;
+}
+
+.advanceSearchIcon:hover .line1::after,
+.activeAdvanceSearchIcon .line1::after {
+    left: 65%;
+}
+
+.line2::after {
+    left: 40%;
+}
+
+.line3::after {
+    left: 65%;
+}
+
+.advanceSearchIcon:hover .line3::after,
+.activeAdvanceSearchIcon .line3::after {
+    left: 15%;
+}
+
+.activeAdvanceSearchIcon:hover .line1::after {
+    left: 15%;
+}
+
+.activeAdvanceSearchIcon:hover .line3::after {
+    left: 65%;
+}

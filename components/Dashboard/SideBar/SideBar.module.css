@@ -1,0 +1,33 @@
+/* input {
+    background-color: #f8f8f8;
+}
+input::placeholder {
+    text-align: left;
+}
+input:focus {
+    box-shadow: none;
+} */
+.sidebarContainer {
+    min-height: 87vh !important;
+    height: 100%;
+    border-top-left-radius: 3rem;
+    position: sticky;
+    top: 5rem;
+    z-index: 30;
+}
+.sidebarLink::after {
+    content: '';
+    width: 3px;
+    position: absolute;
+    height: 0px;
+    background: #fff;
+    right: 0.1rem;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sidebarLink:hover::after {
+    height: 50px;
+}
+.sidebarLink.active::after {
+    height: 50px;
+}

@@ -1,0 +1,92 @@
+.propertyWrapper {
+    border-radius: 10px;
+    border: 1px solid #f8f8f8;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+.propertyWrapper:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 10px 0px #ddd;
+}
+.propertyImageContainer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.PropertyContentContainer {
+    padding: 1rem 0.8rem;
+    padding-right: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.propertyWrapper .propertyReadmore {
+    padding: 0.2rem 1rem;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid rgba(0, 193, 148, 0.04);
+}
+
+.propertyWrapper .propertyActions {
+    position: absolute;
+    right: 0;
+    transform: translateY(-5rem);
+    transition: all 0.3s ease-in-out;
+}
+.propertyWrapper:hover .propertyActions {
+    transform: translateY(0);
+}
+
+.propertyActions .edit {
+    background-color: #1976d2;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+.propertyActions .delete {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+
+.modal .imageSection {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-right: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.modal p {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.modal strong {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.modal .detail {
+    background-color: #e6fafd52;
+}
+
+
+@media (max-width: 1199px) {
+    .propertyImageContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -2rem;
+    }
+    .PropertyContentContainer {
+        padding: 1rem 1rem;
+    }
+    .propertyImageContainer a {
+        min-height: 200px;
+    }
+}

@@ -1,0 +1,27 @@
+.properties::before {
+    content: '';
+    position: absolute;
+    top: 4%;
+    left: 0;
+    background-image: url(/img/home/Element-2.svg);
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 130vw;
+    padding-bottom: 5rem;
+    z-index: -1;
+    transform: translateX(-151px);
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    background-image: url(/img/home/Element.svg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 600px;
+    padding-bottom: 5rem;
+    z-index: -1;
+}

@@ -1,0 +1,28 @@
+.h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.heading {
+    line-height: 1.2;
+}
+.visionImageContainer {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+.rightImage,
+.leftImage {
+    min-height: 300px;
+}
+
+@media (min-width: 1024px) {
+    .mdWidth {
+        width: auto;
+    }
+}
+
+@media (max-width: 1023px) {
+    .rightImage,
+    .leftImage {
+        border-radius: 0.75rem;
+    }
+}

@@ -1,0 +1,18 @@
+
+.containerFooter .footer-title {
+    color: #252153;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.containerFooter ul li > span.mdi {
+    color: #252153;
+    font-size: 24px;
+}
+.containerFooter .row .col-center ul li {
+    line-height: 37px;
+}
+.containerFooter .col-center a {
+    color: #959595;
+    text-decoration: none;
+}

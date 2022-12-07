@@ -1,0 +1,31 @@
+.propBox {
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px 20px 0px;
+    box-shadow: 0px 10px 70px -15px #9ebee778;
+}
+.propBox .imgSide {
+    width: 80px;
+    height: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.propBox .content .propTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+.propBox .content .propBids {
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+}
+.propBox .content .propPrice {
+    font-weight: 700;
+    font-size: 15px;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

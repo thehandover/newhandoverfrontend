@@ -1,0 +1,7 @@
+.contactNeedHelp {
+    box-shadow: 0px 0px 10px 0px #ddd;
+    padding: 2rem;
+    flex: 1 1;
+    border-left: 3px solid #252153;
+    border-radius: 3px;
+}

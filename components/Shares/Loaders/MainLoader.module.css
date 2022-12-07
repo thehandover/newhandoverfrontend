@@ -1,0 +1,35 @@
+.loader {
+    animation: animate-rotate 5s linear forwards infinite, animate-loader 3.5s linear alternate infinite;
+    -webkit-animation: animate-rotate 5s linear forwards infinite, animate-loader 3.5s linear alternate infinite;
+    fill: none;
+}
+@keyframes animate-loader {
+    0% {
+        stroke-dashoffset: 4500;
+    }
+    25% {
+        stroke-dashoffset: 3000;
+    }
+    50% {
+        stroke-dashoffset: 1500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #262250;
+    }
+}
+
+@keyframes animate-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
