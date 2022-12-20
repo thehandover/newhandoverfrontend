@@ -9,6 +9,7 @@
     "lint": "next lint",
     "export": "next build && next export"
   },
+  "proxy": "http://api.thehandover.com:8080",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",

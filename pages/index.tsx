@@ -9,6 +9,7 @@ import InvestorAndDeveloper from "@components/Home/InvestorAndDeveloper";
 import styles from "@styles/Home.module.css";
 
 const Home: NextPage = ({ data }: any) => {
+  console.log("Data:", data);
   return (
     <>
       <Head>
@@ -46,11 +47,10 @@ export default Home;
 export async function getServerSideProps(context: any) {
   // Fetch data from external API
   let latest_properties = null;
-  // const res = await fetch(`${process.env.API_URL}/property/sort/desc`)
-  // if(res.status==200)
-  // {
-  //     latest_properties = await res.json()
-  // }
+  const res = await fetch(`${process.env.API_URL}/property/sort/desc`);
+  if (res.status == 200) {
+    latest_properties = await res.json();
+  }
 
   // Pass data to the page via props
   return {
